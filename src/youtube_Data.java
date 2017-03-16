@@ -35,27 +35,17 @@ public class youtube_Data {
 		//chdriver.findElement(By.xpath("//*[@id='login-password']")).sendKeys("Pepsi123!");
 		//chdriver.wait(10);
 		chdriver.findElement(By.xpath("//*[@id='search-btn']")).click();
-		results = chdriver.findElement(By.xpath("//*[starts-with(@id,'section-list')]")).getText();		
+		results = chdriver.findElement(By.xpath("//*[starts-with(@id,'section-list-')]/li[1]/div/div[1]/div/p")).getText();		
 		System.out.println(results);
 		
-		chdriver.findElement(By.xpath("//*[@id='nav-settings__dropdown-trigger']/div/span[1]")).click();
+		//chdriver.findElement(By.xpath("//*[@id='nav-settings__dropdown-trigger']/div/span[1]")).click();
 		//chdriver.findElement(By.xpath("//*[@id='ember4445']")).click();
-		//*[@id="ember3474"]
-		//*[@id="login-email"]
-		//*[@id="nav-settings__dropdown-trigger"]/div/span[1]
-		//*[@id="header-my-account-password"]
-		//*[@id="header-my-account-sign-in"]
-		//*[@id="header-my-account-sign-in"]
-		//*[@id="section-list-306122"]/li[1]/div/div[1]/div/p
-		//*[@id="section-list-564240"]/li[1]/div/div[1]/div/p
-		//*[@id="section-list-564240"]/li[1]/div/div[1]/div/p
-		//*[@id="section-list-197993"]/li[1]/div/div[1]/div/p
-		//*[@id="section-list-174628"]/li[1]/div/div[1]/div/p
+		
 	}
 	
 	@After
 	public void myteardown() throws Exception{
-		//chdriver.close();
+		chdriver.close();
 	}
 
 }
