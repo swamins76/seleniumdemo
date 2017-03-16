@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GlobalProperties>
+<Browser>Chrome</Browser>
+<Environment>QA</Environment>
+
+</GlobalProperties>
+<TestCase>
+  <TestCaseID>TC001</TestCaseID>
+<TestCaseDescription>Default testcase</TestCaseDescription>
+  <Action>SearchResults</Action>
+   <General>
+    <SearchTerm>Pragmatic</SearchTerm>
+    <ShowHiddenDrives>0</ShowHiddenDrives>
+</General>
+
+</TestCase>
